@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "../../logo.svg";
 import { Link } from "react-router-dom";
 
 class Nav extends Component {
@@ -11,13 +12,8 @@ class Nav extends Component {
         >
           <hr className="m-0" />
           <a className="navbar-brand js-scroll-trigger" href="#page-top">
-            <span className="d-block d-lg-none">My Portfolio</span>
             <span className="d-none d-lg-block">
-              <img
-                className="img-fluid img-profile rounded-circle mx-auto mb-2"
-                src="/images/profile.jpg"
-                alt=""
-              />
+              <img src={logo} className="App-logo" alt="logo" />
             </span>
           </a>
           <button
@@ -49,16 +45,9 @@ class Nav extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About Dev
+                <Link className="nav-link" to="/contact">
+                  Contact Me
                 </Link>
-              </li>
-              <hr className="m-0" />
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/logout">
-                  <i className="fas fa-sign-out-alt" />
-                  Logout
-                </a>
               </li>
             </ul>
           </div>

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Profile from "./Profile";
-import TicTacToe from "./TicTacToe";
-import Pairs from "./Pairs";
-import About from "./About";
+import Profile from "../profile/Profile";
+import Contact from "../profile/Contact";
+import TicTacToe from "../games/TicTacToe";
+import Pairs from "../games/Pairs";
 
 class MainBody extends Component {
   render() {
@@ -13,7 +13,7 @@ class MainBody extends Component {
           <Route exact path="/" component={Profile} />
           <Route path="/tictactoe" component={TicTacToe} />
           <Route path="/pairs" component={Pairs} />
-          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </main>
     );

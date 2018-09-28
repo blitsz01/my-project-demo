@@ -165,6 +165,12 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+#profileImg {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
