@@ -20,6 +20,7 @@ class Profile extends Component {
             {data.firstName}
             <span className="text-primary">{data.lastName}</span>
           </h2>
+          <hr className="m-0" />
           <div className="subheading mb-5">
             {data.address}
             <a href={"mailto:" + data.email}> {data.email}</a>

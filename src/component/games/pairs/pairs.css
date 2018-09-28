@@ -1,0 +1,51 @@
+.modalCard {
+  z-index: 1;
+  background-color: #bd5d38;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: block !important;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#resetBtn {
+  float: right;
+}
+
+.mui-panel {
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 1000px) {
+  .modalCard {
+    width: 150px;
+    height: 150px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .wrapper {
+    max-width: 90%;
+  }
+}
+
+@media all and (min-width: 1590px) {
+  .wrapper {
+    max-width: 70%;
+  }
+}

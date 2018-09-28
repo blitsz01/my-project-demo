@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Profile from "../profile/Profile";
 import Contact from "../profile/Contact";
 import TicTacToe from "../games/TicTacToe";
-import Pairs from "../games/Pairs";
+import Pairs from "../games/pairs/Pairs";
 
 class MainBody extends Component {
   render() {

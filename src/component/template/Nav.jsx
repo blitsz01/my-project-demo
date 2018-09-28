@@ -11,11 +11,12 @@ class Nav extends Component {
           id="sideNav"
         >
           <hr className="m-0" />
-          <a className="navbar-brand js-scroll-trigger" href="#page-top">
+          <Link className="navbar-brand js-scroll-trigger" to="/">
             <span className="d-none d-lg-block">
               <img src={logo} className="App-logo" alt="logo" />
             </span>
-          </a>
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -27,6 +28,7 @@ class Nav extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item">
