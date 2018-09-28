@@ -1,18 +1,28 @@
 import React, { Component } from "react";
 import "./pairs.css";
+
+// I have to use this approach to solve the problem when deploy in github
+// Github generates different image name to display image corectly
+import snowman from "../../../images/snowman.jpg";
+import sleigh from "../../../images/sleigh.jpg";
+import santa from "../../../images/santa.jpg";
+import rudolf from "../../../images/rudolf.jpg";
+import gingerbread from "../../../images/gingerbread.jpg";
+import bells from "../../../images/bells.jpg";
+
 const IMAGES = [
-  "snowman",
-  "snowman",
-  "sleigh",
-  "sleigh",
-  "santa",
-  "santa",
-  "rudolf",
-  "rudolf",
-  "gingerbread",
-  "gingerbread",
-  "bells",
-  "bells"
+  snowman,
+  snowman,
+  sleigh,
+  sleigh,
+  santa,
+  santa,
+  rudolf,
+  rudolf,
+  gingerbread,
+  gingerbread,
+  bells,
+  bells
 ];
 
 class Pairs extends Component {
@@ -48,7 +58,6 @@ class Pairs extends Component {
 
   // It resets the game
   onResetClick() {
-    const { selected, cards, correct } = this.state;
     this.setState({
       cards: shuffleImages(IMAGES.slice()),
       correct: [],
@@ -94,8 +103,8 @@ const MemoryCard = ({ image, isSelected, isCorrect, onSelect }) => (
   >
     <img
       style={{ visibility: isCorrect || isSelected ? "visible" : "hidden" }}
-      src={"./images/" + image + ".png"}
-      alt={image}
+      src={image}
+      alt="?"
     />
   </div>
 );
