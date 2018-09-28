@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import data from "../../data/data.json";
+import profileImg from "../../images/profile.jpg";
+
 class Profile extends Component {
   state = {};
 
@@ -10,7 +12,7 @@ class Profile extends Component {
           <span className="d-lg-block" id="profileImg">
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"
-              src={data.profileImg}
+              src={profileImg}
               alt=""
             />
           </span>
