@@ -1,8 +1,14 @@
 {
   "main.css": "static/css/main.3636f555.css",
   "main.css.map": "static/css/main.3636f555.css.map",
-  "main.js": "static/js/main.b0ec62e7.js",
-  "main.js.map": "static/js/main.b0ec62e7.js.map",
+  "main.js": "static/js/main.a7d51e7f.js",
+  "main.js.map": "static/js/main.a7d51e7f.js.map",
+  "static\\media\\bells.jpg": "static/media/bells.6cbe8d28.jpg",
+  "static\\media\\gingerbread.jpg": "static/media/gingerbread.50f3373e.jpg",
   "static\\media\\logo.svg": "static/media/logo.5d5d9eef.svg",
-  "static\\media\\profile.jpg": "static/media/profile.8c1634c0.jpg"
+  "static\\media\\profile.jpg": "static/media/profile.8c1634c0.jpg",
+  "static\\media\\rudolf.jpg": "static/media/rudolf.3abc3253.jpg",
+  "static\\media\\santa.jpg": "static/media/santa.8d80286f.jpg",
+  "static\\media\\sleigh.jpg": "static/media/sleigh.fc2ad689.jpg",
+  "static\\media\\snowman.jpg": "static/media/snowman.2040cbe4.jpg"
 }
