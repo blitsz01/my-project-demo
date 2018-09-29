@@ -1,0 +1,30 @@
+.modalCard {
+  z-index: 1;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 90px;
+  font-weight: bold;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
