@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Profile from "../profile/Profile";
 import Contact from "../profile/Contact";
-import TicTacToe from "../games/TicTacToe/TicTacToe";
+import TicTacToe from "../games/ticTacToe/TicTacToe";
 import Pairs from "../games/pairs/Pairs";
 
 class MainBody extends Component {
