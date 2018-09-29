@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "./ticTac.css";
+
 class Square extends React.Component {
   render() {
     return (
       <div
-        className="modalCard card-panel"
+        className="modal-board card-panel"
         onClick={() => this.props.onClick()}
       >
         {this.props.value}
@@ -12,4 +13,5 @@ class Square extends React.Component {
     );
   }
 }
+
 export default Square;

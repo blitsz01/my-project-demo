@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Square from "./Square";
+
 class Board extends Component {
   state = { squares: Array(9).fill(null), xIsNext: true };
+
   renderSquare(i) {
     return (
       <Square
@@ -23,6 +25,14 @@ class Board extends Component {
     });
   }
 
+  // It resets the game
+  onResetClick() {
+    this.setState({
+      squares: Array(9).fill(null),
+      xIsNext: true
+    });
+  }
+
   render() {
     const winner = calculateWinner(this.state.squares);
     let status;
@@ -34,6 +44,9 @@ class Board extends Component {
 
     return (
       <div>
+        <span onClick={() => this.onResetClick()} id="resetBtn">
+          Reset <i className="fas fa-sync-alt" />
+        </span>
         <div className="status">{status}</div>
         <div className="board-row">
           {this.renderSquare(0)}

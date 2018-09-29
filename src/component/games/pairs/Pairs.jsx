@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import DisplayImages from "./DisplayImage";
 import "./pairs.css";
 
-// I have to use this approach to solve the problem when deploy in github
-// Github generates different image name to display image corectly
+// I have to use this approach to solve the problem when deploy in github.
+// As when we use hashRoute it will not treat the normal route declaration and
+// change the name of the image file
 import snowman from "../../../images/snowman.jpg";
 import sleigh from "../../../images/sleigh.jpg";
 import santa from "../../../images/santa.jpg";

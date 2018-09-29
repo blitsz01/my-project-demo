@@ -1,19 +1,18 @@
-.modalCard {
+.modal-board {
   z-index: 1;
   width: 90px;
   height: 90px;
   margin: 10px;
-  background: #fff;
+  background: rgb(130, 182, 243);
   border: 1px solid #999;
   float: left;
   font-size: 90px;
   font-weight: bold;
-  height: 34px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  line-height: 90px;
 }
 .board-row:after {
   clear: both;
