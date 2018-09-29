@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DisplayImages from "./DisplayImage";
 import "./pairs.css";
 
 // I have to use this approach to solve the problem when deploy in github
@@ -50,10 +51,9 @@ class Pairs extends Component {
         this.setState({ selected: [selected[0], clickedIndex] });
         setTimeout(() => {
           this.setState({ selected: [] });
-        }, 500);
+        }, 1000);
       }
     }
-    // Otherwise they already have 2 selected and we don't wanna do anything
   }
 
   // It resets the game
@@ -69,14 +69,14 @@ class Pairs extends Component {
     const { correct, selected, cards } = this.state;
     return (
       <section className="resume-section p-3 p-lg-5 d-flex d-column">
-        <h3>Pairs</h3>
         <div className="my-auto">
+          <h2>Pairs</h2>
           <span onClick={() => this.onResetClick()} id="resetBtn">
             Reset <i className="fas fa-sync-alt" />
           </span>
-          <div className="mui-panel wrapper">
+          <div className="card-panel wrapper">
             {cards.map((image, i) => (
-              <MemoryCard
+              <DisplayImages
                 key={i}
                 image={image}
                 isCorrect={correct.includes(i)}
@@ -90,24 +90,6 @@ class Pairs extends Component {
     );
   }
 }
-
-// It display images and check for status
-const MemoryCard = ({ image, isSelected, isCorrect, onSelect }) => (
-  <div
-    className="modalCard mui-panel"
-    onClick={() => {
-      if (!isCorrect && !isSelected) {
-        onSelect();
-      }
-    }}
-  >
-    <img
-      style={{ visibility: isCorrect || isSelected ? "visible" : "hidden" }}
-      src={image}
-      alt="?"
-    />
-  </div>
-);
 
 // Function to shuffle the images
 function shuffleImages(array) {
