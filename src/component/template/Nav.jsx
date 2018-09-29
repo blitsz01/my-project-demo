@@ -16,7 +16,6 @@ class Nav extends Component {
               <img src={logo} className="App-logo" alt="logo" />
             </span>
           </Link>
-
           <button
             className="navbar-toggler"
             type="button"
@@ -30,25 +29,25 @@ class Nav extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav fa-ul mb-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/">
-                  Profile
+                  <i className="fas fa-user-circle text-light" /> Profile
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/tictactoe">
-                  Tic-Tac-Toe
+                  <i className="far fa-times-circle text-light" /> Tic-Tac-Toe
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/pairs">
-                  Pairs
+                  <i className="fas fa-parking text-light" /> Pairs
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">
-                  Contact Me
+                  <i className="fas fa-phone text-light" /> Contact Me
                 </Link>
               </li>
             </ul>
