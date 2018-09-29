@@ -1,15 +1,15 @@
 .modalCard {
   z-index: 1;
   background-color: #bd5d38;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   margin: 10px;
   display: block !important;
 }
 
 #imgCard {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
 }
 
 #resetBtn {
